@@ -1,0 +1,33 @@
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+@mixin cont {
+	$basepadding: 10px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 $basepadding;
+	@media screen and (min-width: $BREAKPOINT-768) {
+		max-width: $BREAKPOINT-768;
+	}
+	@media screen and (min-width: $BREAKPOINT-980) {
+		max-width: $BREAKPOINT-980;
+	}
+	@media screen and (min-width: $BREAKPOINT-1240) {
+		max-width: $BREAKPOINT-1240;
+	}
+}
+@mixin verticalAlignParent {
+	display: table;
+	height: 100%;
+}
+@mixin verticalAlignChild {
+	display: table-cell;
+	vertical-align: middle;
+}
