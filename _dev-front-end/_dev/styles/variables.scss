@@ -1,0 +1,43 @@
+// BREAK POINTS
+$BREAKPOINT-480: 480px;
+$BREAKPOINT-768: 768px; //tablet vertical
+$BREAKPOINT-980: 980px; //tablet horizontal
+$BREAKPOINT-1240: 1240px;
+
+// COLORS
+$blue-sky: #2bbfe0;
+$mustard: #ddc031;
+$lime: #c8d551;
+$light-grey: #f1f1f1;
+$sand-grey: #e8e4e4;
+$medium-grey: #999999;
+$dark-grey: #2a2a2a;
+$coal-dust: #272526;
+$coal: #1e1e1e;
+$black: #000000;
+$white: #ffffff;
+
+.blue-sky {
+	color: $blue-sky;
+}
+.mustard {
+	color: $mustard;
+}
+.lime{
+	color: $lime;
+}
+.light-grey {
+	color: $light-grey;
+}
+.medium-grey {
+	color: $medium-grey;
+}
+.dark-grey {
+	color: $dark-grey;
+}
+.black {
+	color: $black;
+}
+.white {
+	color: $white;
+}

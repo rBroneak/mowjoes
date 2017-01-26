@@ -1,0 +1,201 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "grid";
+@import "type";
+
+// GENERAL
+html, body {
+	height:100%;
+}
+body {
+	overflow-x: hidden;
+	background: white;
+	color: $dark-grey;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	&.menu-open {
+		overflow: hidden;
+		.cp_global-header .sub-menu {
+			height: 100%;
+			max-height: 425px;
+			overflow-y: scroll;
+			position: fixed;
+		}
+	}
+}
+// padding for the fixed nav
+div[class^="cp"] {
+	> section {
+		@include cont();
+	}
+}
+
+.container {
+	@include cont();
+
+}
+$headerPush: 100px;
+#content > :first-child {
+	padding-top: $headerPush;
+	.single-case_studies &{
+		padding-top: 240px;
+	}
+	@media screen and (min-width: $BREAKPOINT-768) {
+		.cp_photo-lead-in {
+			padding-top: 102px;
+		}
+		&.cp_super-content-block {
+			padding-top: $headerPush;
+		}
+	}
+}
+
+a[href^=tel] {
+	pointer-events: initial;
+}
+a {
+	&.full-cover-link {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 4;
+	}
+}
+a, button , [class^=icon]{
+	-webkit-transition: color, background-color 200ms, 150ms;
+	-moz-transition: color, background-color 200ms ,150ms;
+	-ms-transition: color, background-color 200ms ,150ms;
+	-o-transition: color, background-color 200ms ,150ms;
+	transition: color, background-color 200ms ,150ms;
+}
+ul {
+	&.classic {
+		list-style-type: none;
+		li {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			padding: 0;
+			margin-left: 18px;
+			&:before {
+				margin-left: -18px;
+				content: "+";
+				margin-right: 5px;
+			}
+		}
+	}
+	&.hashed {
+		p {
+			line-height: 22px;
+		}
+		> li {
+			position: relative;
+			padding-top: 20px;
+			margin-bottom: 25px;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 31px;
+				height: 3px;
+				background-color: white;
+				top: 0;
+				left: 0;
+			}
+		}
+		&.black {
+			> li {
+				&:before {
+					background-color: $black;
+				}
+			}
+		}
+	}
+}
+.no-touchevents  {
+	a[href^=tel] {
+		pointer-events: none;
+	}
+}
+
+.header-spacer {
+	float: left;
+	height: 148px;
+	width: 100%;
+}
+
+.clearfix {
+	@include clearfix();
+}
+.pull-in {
+	margin: 0;
+	padding: 0;
+}
+.collapse {
+	-webkit-transition: max-height 300ms ease 0s;
+	-moz-transition: max-height 300ms ease 0s;
+	-ms-transition: max-height 300ms ease 0s;
+	-o-transition: max-height 300ms ease 0s;
+	transition: max-height 300ms ease 0s;
+	overflow: hidden;
+}
+.collapse-up {
+	max-height: 0;
+}
+.collapse-down {
+	max-height: 530px;
+	overflow: scroll;
+}
+.slide {
+	-webkit-transition: max-width 300ms ease 0s;
+	-moz-transition: max-width 300ms ease 0s;
+	-ms-transition: max-width 300ms ease 0s;
+	-o-transition: max-width 300ms ease 0s;
+	transition: max-width 300ms ease 0s;
+	overflow: hidden;
+	display: none;
+	max-width: 0;
+	&.active {
+		display: inline-block;
+		max-width: 450px;
+	}
+}
+.sub-nav.desktop {
+	display: none;
+}
+.dropdown-content {
+	background-color: $white;
+	box-shadow: 0 19px 20px -14px rgba(0, 0, 0, 0.2);
+	left: 0;
+	min-width: 160px;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	z-index: 1;
+
+}
+@media screen and (min-width: $BREAKPOINT-768) {
+
+	.mobile {
+		display: none;
+	}
+	.sub-nav.desktop {
+		display: block;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	select,
+	textarea,
+	input {
+		font-size: 12px;
+	}
+}
+
+// COMPONENTS
+@import "components/cp-global-nav";
+@import "components/cp-global-footer";
+@import "components/bs-modal";
+@import "components/print";

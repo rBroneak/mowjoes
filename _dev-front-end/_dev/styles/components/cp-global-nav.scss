@@ -1,0 +1,34 @@
+.cp-global-nav {
+	section {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	nav {
+		> ul {
+			display: flex;
+			flex-flow: row wrap;
+			padding: 0;
+			justify-content: space-between;
+		}
+	}
+	@media (min-width: 600px) {
+		section {
+			display: flex;
+			flex-direction: row;
+			justify-content:  space-between;
+			align-items: center;
+		}
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			li {
+				margin: 0 0 0 20px;
+			}
+		}
+	}
+
+	@media (min-width: $BREAKPOINT-980) {
+
+	}
+}

@@ -1,0 +1,315 @@
+// FONTS
+@font-face {
+	font-family: "ag-book",sans-serif;
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: "akzidenz-grotesk",sans-serif;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'az7';
+	src:url('../fonts/icon-fonts/az7.eot?-b8umna');
+	src:url('../fonts/icon-fonts/az7.eot?#iefix-b8umna') format('embedded-opentype'),
+	url('../fonts/icon-fonts/az7.ttf') format('truetype'),
+	url('../fonts/icon-fonts/az7.woff') format('woff'),
+	url('../fonts/icon-fonts/az7.svg?-b8umna#az7') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'az7';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+// ICON FONTS
+.icon-box-caret:before {
+	content: "\e90b";
+	font-size: 38px;
+}
+.icon-caret:before {
+	content: "\e90c";
+}
+.icon-hamburger:before {
+	content: "\e90d";
+}
+.icon-download:before {
+	content: "\e90e";
+}
+.icon-menu-close:before {
+	content: "\e800";
+}
+.icon-top-7:before {
+	content: "\e607";
+}
+.icon-menu:before {
+	content: "\e600";
+}
+.icon-google-plus:before {
+	content: "\ea88";
+}
+.icon-facebook:before {
+	content: "\ea8c";
+}
+.icon-twitter:before {
+	content: "\ea91";
+}
+.icon-azul:before {
+	content: "\e602";
+}
+.icon-seven:before {
+	content: "\e601";
+}
+.icon-cross-link:before {
+	content: "\e603";
+}
+.icon-email:before {
+	content: "\e604";
+}
+.icon-linkedin:before {
+	content: "\eac9";
+}
+.icon-search:before {
+	content: "\e605";
+}
+.icon-tag:before {
+	content: "\e606";
+}
+.icon-b-corp:before {
+	content: "\e900";
+}
+.icon-box-arrow-down:before {
+	content: "\e901";
+}
+.icon-box-arrow-left:before {
+	content: "\e902";
+}
+.icon-box-caret:before,
+.icon-box-arrow-right:before {
+	content: "\e903";
+}
+.icon-box-arrow-up:before {
+	content: "\e904";
+}
+.icon-envelope:before {
+	content: "\e905";
+}
+.icon-hamburger-new:before {
+	content: "\e906";
+}
+.icon-magnifying-glass-new:before {
+	content: "\e907";
+}
+.icon-pencil:before {
+	content: "\e908";
+}
+.icon-talk-bubble:before {
+	content: "\e909";
+}
+.icon-x-close:before {
+	content: "\e90a";
+}
+.icon-box-plus:before {
+	content: "\e90f";
+}
+.thin {
+	font-family: "ag-book",sans-serif;
+}
+.light {
+	font-family: "akzidenz-grotesk",sans-serif;
+	font-weight: 300;
+}
+.medium {
+	font-family: "akzidenz-grotesk",sans-serif;
+	font-weight: 500;
+}
+// Dealing with the loading of Typekit fonts
+ .wf-loading  {
+	 body, p, a, h1, h2, h3, h4, h5 {
+		opacity: 0.0;
+	 }
+ }
+// Dealing with the loaded Typekit
+.wf-inactive {
+	body, p, a, h1, h2, h3, h4, h5 {
+		-webkit-transition: opacity 200ms;
+		-moz-transition: opacity 200ms;
+		-ms-transition: opacity 200ms;
+		-o-transition: opacity 200ms;
+		transition: opacity 200ms;
+		opacity: 1.0;
+	}
+}
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body, p, a, h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	-webkit-transition: opacity 200ms;
+	-moz-transition: opacity 200ms;
+	-ms-transition: opacity 200ms;
+	-o-transition: opacity 200ms;
+	transition: opacity 200ms;
+}
+body,
+p,
+a {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.125px;
+	font-style: normal;
+}
+body,
+p,
+a.btn,
+button {
+	font-family: "akzidenz-grotesk",sans-serif;
+	font-weight: 300;
+}
+a,
+a:hover,
+a:active {
+	font-family: "akzidenz-grotesk",sans-serif;
+	font-weight: 500;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover {
+	color: $blue-sky;
+}
+h1, .h1, h4, h6, p strong, li strong {
+	font-family: "akzidenz-grotesk",sans-serif;
+	font-weight: 500;
+
+}
+p {
+	margin-bottom: 20px;
+}
+ol { list-style-type: decimal }
+li {
+	color: $black
+}
+h2, h3, h5, .gform_confirmation_wrapper  {
+	font-family: "ag-book",sans-serif;
+}
+.h7 {
+	font-family: "akzidenz-grotesk",sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	&:hover {
+		font-weight: 300;
+	}
+}
+h1, .h1 {
+	font-size: 42px;
+	line-height: 42px;
+	text-transform: lowercase;
+	position: relative;
+	left: -3px;
+	letter-spacing: -1.5px;
+	&.no-text-style {
+		text-transform: none;
+	}
+}
+h2 {
+	font-size: 18px;
+	line-height: 18px;
+}
+h3,
+.gform_confirmation_wrapper {
+	font-size: 20px;
+	line-height: 24px;
+}
+h5 {
+	font-size: 18px;
+	line-height: 23px;
+}
+h6 {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/* ---------------------------------------------------- */
+@media screen and (min-width: $BREAKPOINT-768) {
+	body,
+	p,
+	a,
+	h4 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	h1, .h1 {
+		font-size: 60px;
+		line-height: 60px;
+		left: -4px;
+	}
+}//end mediaQuery
+
+/* ---------------------------------------------------- */
+@media screen and (min-width: $BREAKPOINT-980) {
+	h1, .h1 {
+		font-size: 80px;
+		line-height: 80px;
+		left: -5px;
+	}
+	h2 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	h3,
+	.gform_confirmation_wrapper {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.gform_confirmation_wrapper {
+		line-height: 45px;
+	}
+	h4 {
+		font-size: 30px;
+		line-height: 32px;
+	}
+	h5 {
+		font-size: 25px;
+		line-height: 28px;
+	}
+	p strong {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}//end mediaQuery
+
+/* ---------------------------------------------------- */
+@media screen and (min-width: $BREAKPOINT-1240) {
+	h1, .h1 {
+		font-size: 95px;
+		line-height: 95px;
+		left: -5px;
+	}
+	h5 {
+		font-size: 35px;
+		line-height: 38px;
+	}
+	h6,
+	p,
+	p strong {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}//end mediaQuery
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */

@@ -1,0 +1,17 @@
+.cp-global-footer {
+	margin-top: auto;
+	> section {
+
+	}
+
+	@media (min-width: 600px) {
+		> section {
+
+		}
+
+	}
+
+	@media (min-width: $BREAKPOINT-980) {
+
+	}
+}
