@@ -1,0 +1,44 @@
+.cp-services-block {
+	margin-top: auto;
+	padding: 20px 0;
+
+	> section {
+
+	}
+	.block-holder {
+		align-items: center !important;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		max-width: 412px;
+		justify-content: space-between;
+		margin: auto;
+	}
+	.service {
+		width: 200px;
+		height: 200px;
+		border: 1px solid gainsboro;
+		margin: 3PX;
+	}
+	@media (min-width: 800px) {
+		> section {
+
+		}
+		.block-holder {
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: row;
+			justify-content: space-between;
+			max-width: none;
+		}
+
+
+	}
+
+	@media (min-width: $BREAKPOINT-980) {
+		> section {
+
+		}
+
+	}
+}

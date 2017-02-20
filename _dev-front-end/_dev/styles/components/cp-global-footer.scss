@@ -1,17 +1,66 @@
 .cp-global-footer {
 	margin-top: auto;
+	padding: 20px 0;
 	> section {
-
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
 	}
-
+	p {
+		margin: 0
+	}
+	.contact-block {
+		width: 100%;
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		p {
+			width: 100%;
+		}
+	}
+	.copy-block {
+		align-items: flex-end;
+		width: 100%;
+		display: flex;
+		padding: 0;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+	a {
+		vertical-align: baseline;
+		.lnr {
+			font-size: 14px;
+		}
+	}
 	@media (min-width: 600px) {
 		> section {
-
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.contact-block {
+			display: flex;
+			justify-content: space-between;
+			p {
+				width: auto;
+			}
 		}
 
 	}
 
 	@media (min-width: $BREAKPOINT-980) {
-
+		> section {
+			align-items: flex-end;
+		}
+		.copy-block {
+			width: auto;
+			align-items: flex-end;
+		}
+		.contact-block {
+			width: auto;
+			flex-direction: column;
+			align-items: flex-end;
+		}
 	}
 }

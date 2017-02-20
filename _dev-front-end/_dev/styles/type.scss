@@ -18,109 +18,20 @@
 	font-weight: normal;
 	font-style: normal;
 }
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'az7';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
+.lnr {
+	display: inline-block;
+	fill: currentColor;
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.05em;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-// ICON FONTS
-.icon-box-caret:before {
-	content: "\e90b";
-	font-size: 38px;
+.lnr-chevron-down {
+	font-size: 20px;
 }
-.icon-caret:before {
-	content: "\e90c";
-}
-.icon-hamburger:before {
-	content: "\e90d";
-}
-.icon-download:before {
-	content: "\e90e";
-}
-.icon-menu-close:before {
-	content: "\e800";
-}
-.icon-top-7:before {
-	content: "\e607";
-}
-.icon-menu:before {
-	content: "\e600";
-}
-.icon-google-plus:before {
-	content: "\ea88";
-}
-.icon-facebook:before {
-	content: "\ea8c";
-}
-.icon-twitter:before {
-	content: "\ea91";
-}
-.icon-azul:before {
-	content: "\e602";
-}
-.icon-seven:before {
-	content: "\e601";
-}
-.icon-cross-link:before {
-	content: "\e603";
-}
-.icon-email:before {
-	content: "\e604";
-}
-.icon-linkedin:before {
-	content: "\eac9";
-}
-.icon-search:before {
-	content: "\e605";
-}
-.icon-tag:before {
-	content: "\e606";
-}
-.icon-b-corp:before {
-	content: "\e900";
-}
-.icon-box-arrow-down:before {
-	content: "\e901";
-}
-.icon-box-arrow-left:before {
-	content: "\e902";
-}
-.icon-box-caret:before,
-.icon-box-arrow-right:before {
-	content: "\e903";
-}
-.icon-box-arrow-up:before {
-	content: "\e904";
-}
-.icon-envelope:before {
-	content: "\e905";
-}
-.icon-hamburger-new:before {
-	content: "\e906";
-}
-.icon-magnifying-glass-new:before {
-	content: "\e907";
-}
-.icon-pencil:before {
-	content: "\e908";
-}
-.icon-talk-bubble:before {
-	content: "\e909";
-}
-.icon-x-close:before {
-	content: "\e90a";
-}
-.icon-box-plus:before {
-	content: "\e90f";
-}
+
 .thin {
 	font-family: "ag-book",sans-serif;
 }
@@ -181,7 +92,6 @@ a,
 a:hover,
 a:active {
 	font-family: "akzidenz-grotesk",sans-serif;
-	font-weight: 500;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -217,15 +127,14 @@ h1, .h1 {
 	line-height: 42px;
 	text-transform: lowercase;
 	position: relative;
-	left: -3px;
-	letter-spacing: -1.5px;
 	&.no-text-style {
 		text-transform: none;
 	}
 }
 h2 {
 	font-size: 18px;
-	line-height: 18px;
+	line-height: 20px;
+	color: $grass;
 }
 h3,
 .gform_confirmation_wrapper {
@@ -265,8 +174,8 @@ h6 {
 		left: -5px;
 	}
 	h2 {
-		font-size: 50px;
-		line-height: 50px;
+		font-size: 35px;
+		line-height: 37px;
 	}
 	h3,
 	.gform_confirmation_wrapper {

@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     rename = require("gulp-rename"),
     plumber = require('gulp-plumber'),
     streamqueue  = require('streamqueue'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    data = require('gulp-data');
 
 gulp.task('nunjucks', function() {
     try {
@@ -16,6 +17,9 @@ gulp.task('nunjucks', function() {
     return gulp.src('_dev/pages/**/*.+(html|njs)')
     // Renders template with nunjucks
         .pipe(plumber())
+        .pipe(data(function() {
+            return require('./_dev/mock-service.json')
+        }))
         .pipe(nunjucksRender({
             path: ['_dev/templates']
         }))
@@ -25,6 +29,7 @@ gulp.task('nunjucks', function() {
         console.log('caught nunjucks error', er.message);
     }
 });
+
 // Task to watch nun changes
 gulp.task('watch-nun' , function() {
     gulp.watch([ '_dev/pages/*.+(html|njs)' ,'_dev/**/*.+(html|njs)' ] , [ 'nunjucks' ]);
@@ -81,13 +86,20 @@ gulp.task('watch-sass' , function() {
 gulp.task('webserver', function() {
     gulp.src('_dist')
         .pipe(webserver({
-            port : 2130,
-            livereload: true,
+            port : 2120,
+            livereload: false,
             directoryListing: false,
             open: true,
         }));
 });
 // Default function
-gulp.task('default' , ['sass' , 'watch-sass' , 'watch-nun' , 'watch-js' , 'webserver']);
+gulp.task('default' , [
+    'sass' ,
+    'watch-sass' ,
+    'watch-nun' ,
+    'watch-js' ,
+    'nunjucks' ,
+    'webserver'
+]);
 
 
