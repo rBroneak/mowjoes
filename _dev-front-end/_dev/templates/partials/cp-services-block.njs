@@ -2,7 +2,11 @@
 	<section>
 		<div class="block-holder">
 			{% for service in services %}
-				<div class="service">{{ service.Title }}</div>
+				<div class="service">
+					<h4>
+						{{ service.Title }}
+					</h4>
+				</div>
 			{% endfor %}
 		</div>
 	</section>

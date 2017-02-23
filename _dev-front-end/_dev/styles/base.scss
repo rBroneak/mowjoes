@@ -31,20 +31,10 @@ div[class^="cp"] {
 	@include cont();
 }
 
-#content > :first-child {
+h1 {
 
-	.single-case_studies &{
-		padding-top: 240px;
-	}
-	@media screen and (min-width: $BREAKPOINT-768) {
-		.cp_photo-lead-in {
-			padding-top: 102px;
-		}
-		&.cp_super-content-block {
-			padding-top: $headerPush;
-		}
-	}
 }
+
 a {
 	color: $dark-grey;
 }

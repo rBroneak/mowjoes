@@ -1,11 +1,12 @@
 {
   "services": [{
-    "Title": "Service 1"
+    "Title": "Lawn Care"
   }, {
-    "Title": "Service 2"
+    "Title": "Tree"
   },{
-    "Title": "Service 3"
+    "Title": "Snow"
   },{
-    "Title": "Service 4"
+    "Title": "Fertilization"
+
   }]
 }

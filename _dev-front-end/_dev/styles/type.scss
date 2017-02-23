@@ -125,7 +125,6 @@ h2, h3, h5, .gform_confirmation_wrapper  {
 h1, .h1 {
 	font-size: 42px;
 	line-height: 42px;
-	text-transform: lowercase;
 	position: relative;
 	&.no-text-style {
 		text-transform: none;
@@ -134,7 +133,7 @@ h1, .h1 {
 h2 {
 	font-size: 18px;
 	line-height: 20px;
-	color: $grass;
+	color: $blue-sky;
 }
 h3,
 .gform_confirmation_wrapper {

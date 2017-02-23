@@ -24,12 +24,20 @@ gulp.task('nunjucks', function() {
             path: ['_dev/templates']
         }))
         // output files in app folder
-        .pipe(gulp.dest('_dist'))
+        .pipe(gulp.dest('_dist'));
     } catch (er) {
         console.log('caught nunjucks error', er.message);
     }
 });
+gulp.task('buildServicePages' , function () {
+    gulp.src('./_dev/services.njs')
+        .pipe(data(file => require('./src/items.json')))
 
+        .pipe(nunjucksRender({
+            path: ['_dev/templates']
+        }))
+        .pipe(gulp.dest('dist'));
+});
 // Task to watch nun changes
 gulp.task('watch-nun' , function() {
     gulp.watch([ '_dev/pages/*.+(html|njs)' ,'_dev/**/*.+(html|njs)' ] , [ 'nunjucks' ]);
@@ -99,6 +107,7 @@ gulp.task('default' , [
     'watch-nun' ,
     'watch-js' ,
     'nunjucks' ,
+    'buildServicePages',
     'webserver'
 ]);
 
