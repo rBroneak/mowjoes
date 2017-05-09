@@ -7,16 +7,13 @@
 // GENERAL
 html, body {
 	height:100%;
+	font-family: 'Lora', serif;
 }
-$headerPush: 100px;
 body {
 	overflow-x: hidden;
 	background: white;
-	color: $dark-grey;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
-	padding-top: $headerPush;
 
 }
 // padding for the fixed nav
@@ -36,10 +33,14 @@ h1 {
 }
 
 a {
-	color: $dark-grey;
+	color: $pine;
+	text-decoration: none;
+	&:hover{
+		color: $mint-mist;
+	}
 }
 .active a{
-	color: $blue-sky;
+	color: $pine;
 }
 a[href^=tel] {
 	pointer-events: initial;
@@ -60,19 +61,26 @@ a, button , [class^=icon]{
 	vertical-align: middle;
 	touch-action: manipulation;
 	cursor: pointer;
+	color: white;
 	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
 	white-space: nowrap;
-	border: 1px solid $grass;
+	background: $evening-sky;
 	padding: 5px 10px;
-	color: $grass;
 	-webkit-transition: all 200ms;
 	-moz-transition: all 200ms;
 	-ms-transition: all 200ms;
 	-o-transition: all 200ms;
 	transition: all 200ms;
 	&:hover{
+		background: $morning-sky;
 		text-decoration: none;
-		border-color: $blue-sky;
+	}
+	&.green-btn {
+		background-color: $mint-mist;
+		&:hover {
+			background: $grass;
+			color: white;
+		}
 	}
 	&:active,
 	&.active {
@@ -113,110 +121,7 @@ a, button , [class^=icon]{
 		}
 	}
 }
-ul {
-	&.classic {
-		list-style-type: none;
-		li {
-			margin-top: 5px;
-			margin-bottom: 5px;
-			padding: 0;
-			margin-left: 18px;
-			&:before {
-				margin-left: -18px;
-				content: "+";
-				margin-right: 5px;
-			}
-		}
-	}
-	&.hashed {
-		p {
-			line-height: 22px;
-		}
-		> li {
-			position: relative;
-			padding-top: 20px;
-			margin-bottom: 25px;
-			&:before {
-				content: '';
-				position: absolute;
-				width: 31px;
-				height: 3px;
-				background-color: white;
-				top: 0;
-				left: 0;
-			}
-		}
-		&.black {
-			> li {
-				&:before {
-					background-color: $black;
-				}
-			}
-		}
-	}
-}
-.no-touchevents  {
-	a[href^=tel] {
-		pointer-events: none;
-	}
-}
 
-.header-spacer {
-	float: left;
-	height: 148px;
-	width: 100%;
-}
-
-.clearfix {
-	@include clearfix();
-}
-.pull-in {
-	margin: 0;
-	padding: 0;
-}
-.collapse {
-	-webkit-transition: max-height 300ms ease 0s;
-	-moz-transition: max-height 300ms ease 0s;
-	-ms-transition: max-height 300ms ease 0s;
-	-o-transition: max-height 300ms ease 0s;
-	transition: max-height 300ms ease 0s;
-	overflow: hidden;
-}
-.collapse-up {
-	max-height: 0;
-}
-.collapse-down {
-	max-height: 530px;
-	overflow: scroll;
-}
-.slide {
-	-webkit-transition: max-width 300ms ease 0s;
-	-moz-transition: max-width 300ms ease 0s;
-	-ms-transition: max-width 300ms ease 0s;
-	-o-transition: max-width 300ms ease 0s;
-	transition: max-width 300ms ease 0s;
-	overflow: hidden;
-	display: none;
-	max-width: 0;
-	&.active {
-		display: inline-block;
-		max-width: 450px;
-	}
-}
-.sub-nav.desktop {
-	display: none;
-}
-.dropdown-content {
-	background-color: $white;
-	box-shadow: 0 19px 20px -14px rgba(0, 0, 0, 0.2);
-	left: 0;
-	min-width: 160px;
-	position: absolute;
-	top: 50px;
-	width: 100%;
-	z-index: 1;
-
-}
 @media screen and (min-width: $BREAKPOINT-768) {
 	.mobile {
 		display: none;

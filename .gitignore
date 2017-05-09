@@ -2,3 +2,7 @@
 /_dev-front-end/node_modules/**
 /.idea/
 /*DS_Store
+/node_modules/
+/_dev-front-end/node_modules/
+!/js/
+/_dev-front-end/.sass-cache/

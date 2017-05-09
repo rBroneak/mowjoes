@@ -4,11 +4,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Mow Joes</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+	</style>
 	<link rel="stylesheet" href="styles/style.css">
-
-	<!--AZUL7 FONTS-->
-	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 </head>
 <body>
 

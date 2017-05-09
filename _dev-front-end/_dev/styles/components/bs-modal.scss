@@ -15,7 +15,6 @@ $modal-backdrop-bg: $zindex-modal-background - 1;
 .modal {
 	&.background-blue {
 		.modal-content {
-			background-color: $blue-sky;
 			.btn {
 				color: $white;
 				border-color: $white;
@@ -24,7 +23,6 @@ $modal-backdrop-bg: $zindex-modal-background - 1;
 	}
 	&.background-light-grey {
 		.modal-content {
-			background-color: $light-grey;
 			.btn {
 				color: $black;
 				border-color: $black;

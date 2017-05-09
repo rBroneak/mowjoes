@@ -1,47 +1,22 @@
 .cp-global-nav {
-	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	padding: 20px 0;
-	background-color: white;
 	z-index: 1;
-	> section {
+	position: absolute;
+	section {
+		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		justify-content:  flex-end;
 		align-items: center;
-	}
-	nav {
-		> ul {
-			display: flex;
-			flex-flow: row wrap;
-			padding: 0;
-			justify-content: space-between;
-			align-items: center;
-		}
 	}
 	h1 {
 		display: flex;
 		margin: auto;
 	}
 	@media (min-width: 600px) {
-		section {
-			display: flex;
-			flex-direction: row;
-			justify-content:  space-between;
-			align-items: center;
-		}
-		nav {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			li {
-				margin: auto 20px;
-				&:last-child {
-					margin-right:0;
-				}
-			}
-		}
+
 		.flex-item {
 			align-self: center;
 		}

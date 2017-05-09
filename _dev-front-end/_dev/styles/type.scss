@@ -1,220 +1,47 @@
-// FONTS
-@font-face {
-	font-family: "ag-book",sans-serif;
-	font-style: normal;
-	font-weight: 200;
-}
-@font-face {
-	font-family: "akzidenz-grotesk",sans-serif;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'az7';
-	src:url('../fonts/icon-fonts/az7.eot?-b8umna');
-	src:url('../fonts/icon-fonts/az7.eot?#iefix-b8umna') format('embedded-opentype'),
-	url('../fonts/icon-fonts/az7.ttf') format('truetype'),
-	url('../fonts/icon-fonts/az7.woff') format('woff'),
-	url('../fonts/icon-fonts/az7.svg?-b8umna#az7') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-.lnr {
-	display: inline-block;
-	fill: currentColor;
-	width: 1em;
-	height: 1em;
-	vertical-align: -0.05em;
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-.lnr-chevron-down {
-	font-size: 20px;
-}
-
-.thin {
-	font-family: "ag-book",sans-serif;
-}
-.light {
-	font-family: "akzidenz-grotesk",sans-serif;
-	font-weight: 300;
-}
-.medium {
-	font-family: "akzidenz-grotesk",sans-serif;
-	font-weight: 500;
-}
-// Dealing with the loading of Typekit fonts
- .wf-loading  {
-	 body, p, a, h1, h2, h3, h4, h5 {
-		opacity: 0.0;
-	 }
- }
-// Dealing with the loaded Typekit
-.wf-inactive {
-	body, p, a, h1, h2, h3, h4, h5 {
-		-webkit-transition: opacity 200ms;
-		-moz-transition: opacity 200ms;
-		-ms-transition: opacity 200ms;
-		-o-transition: opacity 200ms;
-		transition: opacity 200ms;
-		opacity: 1.0;
-	}
-}
-html {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-body, p, a, h1, h2, h3, h4, h5 {
-	margin: 0;
-	padding: 0;
-	-webkit-transition: opacity 200ms;
-	-moz-transition: opacity 200ms;
-	-ms-transition: opacity 200ms;
-	-o-transition: opacity 200ms;
-	transition: opacity 200ms;
-}
 body,
 p,
-a {
+a,
+li,
+span {
+	font-family: 'Lora', serif;
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: -0.125px;
-	font-style: normal;
 }
-body,
-p,
-a.btn,
-button {
-	font-family: "akzidenz-grotesk",sans-serif;
-	font-weight: 300;
-}
-a,
-a:hover,
-a:active {
-	font-family: "akzidenz-grotesk",sans-serif;
-	cursor: pointer;
-	text-decoration: none;
-}
-a:hover {
-	color: $blue-sky;
-}
-h1, .h1, h4, h6, p strong, li strong {
-	font-family: "akzidenz-grotesk",sans-serif;
-	font-weight: 500;
-
-}
-p {
-	margin-bottom: 20px;
-}
-ol { list-style-type: decimal }
-li {
-	color: $black
-}
-h2, h3, h5, .gform_confirmation_wrapper  {
-	font-family: "ag-book",sans-serif;
-}
-.h7 {
-	font-family: "akzidenz-grotesk",sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	line-height: 16px;
-	&:hover {
-		font-weight: 300;
-	}
-}
-h1, .h1 {
-	font-size: 42px;
-	line-height: 42px;
-	position: relative;
-	&.no-text-style {
-		text-transform: none;
-	}
+h1 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 28px;
 }
 h2 {
-	font-size: 18px;
-	line-height: 20px;
-	color: $blue-sky;
+	font-size: 24px;
+	line-height: 30px;
 }
-h3,
-.gform_confirmation_wrapper {
-	font-size: 20px;
+h3 {
+	font-size: 16px;
 	line-height: 24px;
 }
-h5 {
-	font-size: 18px;
-	line-height: 23px;
+h4 {
+	font-size: 12px;
+	line-height: 18px;
 }
-h6 {
-	font-size: 16px;
-	line-height: 22px;
-}
-
 /* ---------------------------------------------------- */
 @media screen and (min-width: $BREAKPOINT-768) {
-	body,
-	p,
-	a,
-	h4 {
-		font-size: 16px;
-		line-height: 22px;
+	h1 {
+		font-size: 40px;
+		line-height: 54px;
 	}
-	h1, .h1 {
-		font-size: 60px;
-		line-height: 60px;
-		left: -4px;
-	}
+
 }//end mediaQuery
 
 /* ---------------------------------------------------- */
 @media screen and (min-width: $BREAKPOINT-980) {
-	h1, .h1 {
-		font-size: 80px;
-		line-height: 80px;
-		left: -5px;
-	}
-	h2 {
-		font-size: 35px;
-		line-height: 37px;
-	}
-	h3,
-	.gform_confirmation_wrapper {
-		font-size: 35px;
-		line-height: 35px;
-	}
-	.gform_confirmation_wrapper {
-		line-height: 45px;
-	}
-	h4 {
-		font-size: 30px;
-		line-height: 32px;
-	}
-	h5 {
-		font-size: 25px;
-		line-height: 28px;
-	}
-	p strong {
-		font-size: 16px;
-		line-height: 22px;
-	}
+
 }//end mediaQuery
 
 /* ---------------------------------------------------- */
 @media screen and (min-width: $BREAKPOINT-1240) {
-	h1, .h1 {
-		font-size: 95px;
-		line-height: 95px;
-		left: -5px;
-	}
-	h5 {
-		font-size: 35px;
-		line-height: 38px;
-	}
-	h6,
-	p,
-	p strong {
-		font-size: 18px;
-		line-height: 24px;
-	}
+
 }//end mediaQuery
 
 input:focus::-webkit-input-placeholder { color:transparent; }

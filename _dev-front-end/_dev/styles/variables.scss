@@ -1,33 +1,17 @@
 // BREAK POINTS
 $BREAKPOINT-480: 480px;
+$BREAKPOINT-600: 600px; //tablet vertical
 $BREAKPOINT-768: 768px; //tablet vertical
 $BREAKPOINT-980: 980px; //tablet horizontal
 $BREAKPOINT-1240: 1240px;
 
 // COLORS
-$blue-sky: #2bbfe0;
-$grass: #1ce634;
-$light-grey: #f1f1f1;
-$sand-grey: #e8e4e4;
-$medium-grey: #999999;
-$dark-grey: #2a2a2a;
-$coal-dust: #272526;
-$coal: #1e1e1e;
+$grass: #1FB264;
+$pine: #17462F;
+$mint-mist: rgba(#00AC4E , 0.5);
 $black: #000000;
 $white: #ffffff;
 
-.green {
-	color: $grass;
-}
-.medium-grey {
-	color: $medium-grey;
-}
-.dark-grey {
-	color: $dark-grey;
-}
-.black {
-	color: $black;
-}
-.white {
-	color: $white;
-}
+
+$morning-sky: #0091EA;
+$evening-sky: #1565C0;
