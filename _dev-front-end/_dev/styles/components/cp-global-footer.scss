@@ -1,13 +1,12 @@
 .cp-global-footer {
 	margin-top: auto;
 	padding: 20px 0;
+	background: $midnight-pine;
+	color: white;
 	> section {
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: center;
-	}
-	p {
-		margin: 0
 	}
 	.contact-block {
 		width: 100%;
@@ -24,14 +23,14 @@
 		display: flex;
 		padding: 0;
 	}
+	a,
 	p {
-		margin-bottom: 10px;
+		font-size: 12px;
+		line-height: 18px;
 	}
 	a {
+		color: white;
 		vertical-align: baseline;
-		.lnr {
-			font-size: 14px;
-		}
 	}
 	@media (min-width: 600px) {
 		> section {
@@ -60,7 +59,7 @@
 		.contact-block {
 			width: auto;
 			flex-direction: column;
-			align-items: flex-end;
+			align-items: flex-start;
 		}
 	}
 }

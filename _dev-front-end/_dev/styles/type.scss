@@ -3,9 +3,16 @@ p,
 a,
 li,
 span {
-	font-family: 'Lora', serif;
+	font-family: 'Muli', sanserif;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Lora', serif;
 }
 h1 {
 	font-weight: bold;
