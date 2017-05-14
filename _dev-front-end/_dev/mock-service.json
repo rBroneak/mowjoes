@@ -1,11 +1,17 @@
 {
   "services": [{
-    "Title": "Lawn Care"
+    "Title": "Lawn Care",
+    "desc" : "We provide a weekly lawn maintenance program for residential and commercial properties that are tailored to meet your needs."
+  },{
+    "Title": "Leaf Removal and Seasonal Cleanups",
+    "desc" : "We'll blow all the leaves into a pile. Swing through and vacuum them up. Leaving you with a clean property when you get home!"
   }, {
-    "Title": "Tree"
+    "Title": "Tree",
+    "desc" : "We have a certified arborist on call to address and tree care needs you may have."
+  },{ "Title": "Core Aeration",
+   "desc" : "This is a process that involves pulling a plug from the ground to help relieve compaction that has built up in the soil."
   },{
-    "Title": "Snow"
-  },{
-    "Title": "Fertilization"
+    "Title": "Fertilization",
+    "desc" : "Our six-step program takes the guesswork out of building the ultimate lawn."
   }]
 }

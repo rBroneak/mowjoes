@@ -6,8 +6,8 @@
 	width: 100%;
 	min-height: 485px;
 	margin-bottom: 20px;
-	background-size: cover;
-	background-position: top center;
+	background-size: auto 121%;
+	background-position: center center;
 	background-color: #A6F1C9;
 
 	> section {
@@ -22,19 +22,16 @@
 		transition: all 200ms;
 	}
 	@media (min-width:$BREAKPOINT-600) {
-		.copy-block {
-			padding: 0 40px;
-		}
-		header {
-			max-width: 75vw;
-		}
+
 	}
 	@media (min-width: $BREAKPOINT-768) {
+		background-position: center center;
+		background-size: auto 151%;
 
 	}
 	@media (min-width: $BREAKPOINT-980) {
 		min-height: 530px;
-
+		background-size: auto 171%;
 		header {
 			max-width: 936px;
 		}

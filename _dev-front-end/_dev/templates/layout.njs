@@ -27,7 +27,7 @@
 
 {% endblock %}
 
-	<script src="/js/jQuery-1.12.min.js"></script>
-	<script src="/js/plugins/plugins.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="../js/jQuery-1.12.min.js"></script>
+	<script src="../js/plugins/plugins.js"></script>
+	<script src="../js/main.js"></script>
 </html>

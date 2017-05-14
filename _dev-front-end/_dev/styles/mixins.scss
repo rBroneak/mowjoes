@@ -12,7 +12,8 @@
 	$basepadding: 10px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 $basepadding;
+	padding-left: $basepadding;
+	padding-right: $basepadding;
 	@media screen and (min-width: $BREAKPOINT-768) {
 		max-width: $BREAKPOINT-768;
 	}

@@ -12,8 +12,6 @@ html, body {
 body {
 	overflow-x: hidden;
 	background: white;
-	display: flex;
-	flex-direction: column;
 
 }
 // padding for the fixed nav
@@ -74,12 +72,12 @@ a, button , [class^=icon]{
 	&:hover{
 		background: $morning-sky;
 		text-decoration: none;
+		color: white;
 	}
 	&.green-btn {
 		background-color: $mint-mist;
 		&:hover {
 			background: $grass;
-			color: white;
 		}
 	}
 	&:active,
@@ -143,5 +141,8 @@ a, button , [class^=icon]{
 @import "components/cp-global-footer";
 @import "components/cp-lead-in";
 @import "components/cp-services-block";
-@import "components/bs-modal";
+@import "components/owl.carousel";
+@import "components/owl.theme";
+@import "components/cp-testimonials";
+@import "components/cp-callout";
 @import "components/print";

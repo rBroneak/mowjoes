@@ -1,0 +1,46 @@
+.cp-testimonials {
+	background: url("../images/leaves-bg.png");
+	position: relative;
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	&:before {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		content: '';
+		background: -moz-linear-gradient(top, rgba(23,70,47,0.6) 0%, rgba(15,47,31,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(23,70,47,0.6) 0%,rgba(15,47,31,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(23,70,47,0.6) 0%,rgba(15,47,31,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9917462f', endColorstr='#0f2f1f',GradientType=0 ); /* IE6-9 */;
+	}
+	.item {
+		height: 425px;
+		text-align: center;
+		color: white;
+		flex: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		font-family: 'Lora', serif;
+		font-style: italic;
+
+	}
+	section {
+
+	}
+	@media screen and (min-width: $BREAKPOINT-768) {
+		height:  375px;
+		.item {
+			height:  300px;
+		}
+	}
+}

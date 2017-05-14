@@ -10,35 +10,81 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-		max-width: 412px;
 		justify-content: space-between;
 		margin: auto;
+		align-items: center;
+	}
+	.cell {
+		align-self: center;
+		padding: 0 20px;
 	}
 	.service {
-		width: 200px;
-		height: 200px;
-		border: 1px solid $grass;
-		margin: 3PX;
 		display: flex;
+		flex-direction: column;
+		width: 100%;
 		align-items: center;
 		text-align: center;
 		border-radius: 2px;
+		position: relative;
+		padding: 20px;
+		&:after {
+			background: url("../images/horizontal-dotted-bar.svg") no-repeat;
+			position: absolute;
+			content: '';
+			top: 100%;
+			height: 1px;
+			width: 102px;
+			right: 50%;
+			margin-right: -51px;
+			background-repeat: repeat;
+		}
+		&:last-child {
+			&:after {
+				background: none !important;
+			}
+		}
 	}
-	h4 {
+	h2 {
+		font-family: 'Lora', serif;
+		font-weight: 600;
 		margin: auto;
 		color: $grass;
 	}
+	@media (min-width: 600px) {
+		.block-holder {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			max-width: none;
+		}
+		.service {
+			width: 50%;
+			&:after {
+				height: 102px;
+				width: 1px;
+				right: 0px;
+				top: 50%;
+				margin-top: -51px;
+				margin-right: 0;
+				background: url("../images/dotted-bar.svg") no-repeat;
+			}
+			&:nth-child(even) {
+				&:after {
+					background: none;
+				}
+			}
+
+		}
+
+	}
 	@media (min-width: 700px) {
+
 		> section {
 
 		}
-		.block-holder {
-			display: flex;
-			flex-wrap: nowrap;
-			flex-direction: row;
-			justify-content: space-between;
-			max-width: none;
-		}
+
 
 
 	}
@@ -47,6 +93,18 @@
 		> section {
 
 		}
+		.service {
+			width: 33.3333%;
+			padding: 35px;
+			&:after {
+				background: url("../images/dotted-bar.svg") no-repeat !important;
+			}
+			&:nth-child(3n) {
+				&:after {
+					background: none !important;
+				}
 
+			}
+		}
 	}
 }

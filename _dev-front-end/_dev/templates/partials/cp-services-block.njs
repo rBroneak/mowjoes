@@ -3,9 +3,14 @@
 		<div class="block-holder">
 			{% for service in services %}
 				<div class="service">
-					<h4>
-						{{ service.Title }}
-					</h4>
+					<div>
+						<h2>
+							{{ service.Title }}
+						</h2>
+					</div>
+					<div>
+						<p>{{ service.desc | safe }}</p>
+					</div>
 				</div>
 			{% endfor %}
 		</div>

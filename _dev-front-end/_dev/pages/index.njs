@@ -23,8 +23,10 @@
 	us a call or send us an email, we’d love to hear from you!</p>'
 	}
 	%}
-	{% include "../templates/partials/cp-general-content.njs" %}
+	{#{% include "../templates/partials/cp-general-content.njs" %}#}
 	{% include "../templates/partials/cp-services-block.njs" %}
+	{% include "../templates/partials/cp-callout.njs" %}
+	{% include "../templates/partials/cp-testimonials.njs" %}
 {% endblock %}
 {% block footer %}
 	{% include "../templates/partials/global-footer.njs" %}
