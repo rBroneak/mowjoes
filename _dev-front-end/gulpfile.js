@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     streamqueue  = require('streamqueue'),
     concat = require('gulp-concat'),
+    autoprefixer = require('gulp-autoprefixer');
     data = require('gulp-data');
 
 gulp.task('nunjucks', function() {
@@ -32,7 +33,6 @@ gulp.task('nunjucks', function() {
 gulp.task('buildServicePages' , function () {
     gulp.src('./_dev/services.njs')
         .pipe(data(file => require('./src/items.json')))
-
         .pipe(nunjucksRender({
             path: ['_dev/templates']
         }))
@@ -83,6 +83,7 @@ gulp.task('sass' , function () {
         .pipe(plumber())
         .pipe(minifyCSS())
         .pipe(rename("/styles/style.css"))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('_dist/'))
         .pipe(gulp.dest('../'))
 });

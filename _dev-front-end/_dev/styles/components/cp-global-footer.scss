@@ -13,7 +13,7 @@
 		line-height: 10px;
 		position: relative;
 		padding-right:10px;
-		margin-left:10px;
+		margin-right:10px;
 		&:before {
 			content: '';
 			height: 8px;
@@ -23,10 +23,11 @@
 			top: 5px;
 			background: white;
 		}
-		&:first-of-type {
+		&:last-of-type {
 			margin-left: 0;
 		}
 		&:last-child {
+			margin-left:0;
 			&:before {
 				background: none;
 
