@@ -27,6 +27,8 @@
 		justify-content: center;
 	}
 	h2 {
+		font-size: 18px;
+		line-height: 21px;
 		margin-bottom: 20px;
 	}
 	p {
@@ -38,6 +40,10 @@
 
 	}
 	@media screen and (min-width: $BREAKPOINT-768) {
+		h2 {
+			font-size: 24px;
+			line-height: 30px;
+		}
 		height:  375px;
 		.item {
 			height:  300px;

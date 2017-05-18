@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block content %}
-	<div class="cp-lead-in" style="background-image: url(../images/mow-joe-master-logo.svg)">
+	<div class="cp-lead-in">
 		<section>
 			<header>
-				<h1>Mow Joe Outdoor Solutions is a small family business servicing properties in White Bear Lake; Maplewood, Oakdale, Woodbury and Mahtomedi.</h1>
+				<h1>Mow Joe Outdoor Solutions is a small family business servicing properties in White Bear Lake, Maplewood, Oakdale, Woodbury and Mahtomedi.</h1>
 			</header>
 		</section>
 	</div>

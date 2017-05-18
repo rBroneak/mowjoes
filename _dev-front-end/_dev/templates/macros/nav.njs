@@ -4,7 +4,7 @@
 		<section>
 			<nav>
 				<ul>
-					<li><a class="btn green-btn" href="/jobs.html">Contact</a></li>
+					<li><a class="btn green-btn" href="mailto:joe@mowjoeos.com">Contact</a></li>
 				</ul>
 			</nav>
 			</div>
