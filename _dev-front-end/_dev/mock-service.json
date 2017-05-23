@@ -1,5 +1,8 @@
 {
   "services": [{
+    "Title": "Snow & Ice Managment",
+    "desc": "We provide professional snow and ice management services for commercial and residential clients."
+  },{
     "Title": "Lawn Care",
     "desc" : "We provide a weekly lawn maintenance program for residential and commercial properties that are tailored to meet your needs."
   },{
